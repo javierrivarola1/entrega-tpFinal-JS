@@ -6,17 +6,18 @@ botonHamburguesa.addEventListener("click", toggleMenu);
 
 
 function toggleMenu() {
-    let menu = document.getElementById("menu");
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
+    if (fondoMenu.style.display === "flex") {
+        fondoMenu.style.display = "none";
     } else {
-        menu.style.display = "flex";
+        fondoMenu.style.display = "flex";
     }
 }
 
-let fondoMenu = document.getElementById("fondo-menu");
+const fondoMenu = document.getElementById("fondo-menu");
 
-fondoMenu.addEventListener("mouseleave", toggleMenu);
+let cierreFondoMenu = document.getElementById("cierre-fondo-menu");
+
+cierreFondoMenu.addEventListener("click", toggleMenu);
 
 
 
