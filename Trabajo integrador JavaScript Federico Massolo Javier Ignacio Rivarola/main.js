@@ -1,4 +1,31 @@
 "use strict";
+
+let botonHamburguesa = document.getElementById("btn-hamburguesa");
+
+botonHamburguesa.addEventListener("click", toggleMenu);
+
+
+function toggleMenu() {
+    let menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+
+let fondoMenu = document.getElementById("fondo-menu");
+
+fondoMenu.addEventListener("mouseleave", toggleMenu);
+
+
+
+
+
+
+
+
+
 let charactersCaptcha = [
     "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
     "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
