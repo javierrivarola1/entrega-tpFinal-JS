@@ -17,11 +17,23 @@ const fondoMenu = document.getElementById("fondo-menu");
 
 let cierreFondoMenu = document.getElementById("cierre-fondo-menu");
 
-cierreFondoMenu.addEventListener("click", toggleMenu);
 
+//Animacion para cerrar el nav version mobile
 
+function cerrarNav() {
 
+    fondoMenu.classList.add("cerrar")
 
+    setTimeout(() => {
+        fondoMenu.classList.remove("cerrar");
+        fondoMenu.style.display = "none";
+    }, 600);
+}
+
+cierreFondoMenu.addEventListener("click", 
+
+    cerrarNav
+);
 
 
 
@@ -42,12 +54,12 @@ function generarCadenaAleatoria() {
     for (let i = 0; i < lengthCaptcha; i++) {
         let numRandom = generarNumeroAleatorio()
         console.log(numRandom);
-       cadenaRetornada.push(charactersCaptcha[numRandom])
+        cadenaRetornada.push(charactersCaptcha[numRandom])
     }
 }
 function generarNumeroAleatorio() {
-    let result= Math.floor(Math.random() * charactersCaptcha.length);
-return result;
+    let result = Math.floor(Math.random() * charactersCaptcha.length);
+    return result;
 }
 
 generarCadenaAleatoria();

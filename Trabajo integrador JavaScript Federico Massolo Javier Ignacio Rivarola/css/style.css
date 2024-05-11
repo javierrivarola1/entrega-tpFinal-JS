@@ -1,85 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+header {
+  background: url("/img/Imagen_fondoInicio.jpg") center no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navegador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+header article {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navegador ul {
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 400px;
+}
+
+.navegador li > a {
+  text-decoration: none;
+  color: white;
+}
+
+#cierre-fondo-menu {
+  display: none;
+}
+
+.fondo-menu {
+  display: flex;
+}
+
+nav button {
+  display: none;
+}
+
+.fondo-menu {
+  display: none;
 }
 
 /* mediaQ  */
 
-
 @media (width <= 480px) {
+  header {
+    position: relative;
+    height: 100vh;
+  }
+  nav button {
+    display: block;
+  }
 
+  header > article {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
 
+  .navegador {
+    padding: 0px 12px;
+  }
 
+  .navegador ul {
+    display: none;
+  }
 
-    header {
-        position: relative;
+  .fondo-menu {
+    animation: navAnimacion 0.6s ease-in-out;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    top: 0;
+  }
+
+  #cierre-fondo-menu {
+    display: block;
+    text-decoration: none;
+    align-self: flex-end;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #cierre-fondo-menu img {
+    height: 100%;
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 3rem;
+    color: whitesmoke;
+  }
+
+  .menu li > a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  #btn-hamburguesa {
+    border: none;
+    background-color: transparent;
+  }
+
+  @keyframes navAnimacion {
+    0% {
+      transform: translateX(100%);
     }
-
-
-    .navegador {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        background-color: red;
+    100% {
+      transform: translateX(0%);
     }
-
-
-
-
-    .fondo-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-        height: 100vh;
-        width: 45%;
-        position: absolute;
-        right: 0;
-        z-index: 3;
-        top: 0;
+  }
+  @keyframes navAnimacionCerrar {
+    0% {
+      transform: translateX(0%);
     }
-
-    #cierre-fondo-menu {
-        text-decoration: none;
-        align-self: flex-end;
-        background-color: white;
-        height: 2rem;
-        width: 2rem;
+    100% {
+      transform: translateX(100%);
     }
+  }
 
-    #cierre-fondo-menu img {
-        height: 100%;
-        width: 100%;
-    }
-   .menu {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        gap: 3rem;
-        color: whitesmoke;
-    } 
-
-    .menu li > a {
-        text-decoration: none;
-        color: whitesmoke;
-    }
-    
-
-    #btn-hamburguesa {
-        border: none;
-        background-color: transparent;
-    }
-
-
-
-
-
+  .cerrar {
+    animation: navAnimacionCerrar 0.6s ease-in-out forwards;
+  }
 }
-
-
-
-
