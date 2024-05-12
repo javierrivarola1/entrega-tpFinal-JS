@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-header {
+
+
+.header-index {
   background: url("/img/Imagen_fondoInicio.jpg") center no-repeat;
   background-size: cover;
   height: 40vh;
@@ -62,6 +64,67 @@ nav button {
 
 .fondo-menu {
   display: none;
+}
+
+footer {
+  margin:3rem; 
+  font-style: italic;
+}
+
+/* Rocas intrusivas */
+
+.header-intrusivas {
+  background: url("/img/header-intrusiva.jpg") center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+body {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+width: 50%;
+}
+
+section {
+  margin-top:2rem;
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div img{
+  width: 100%;
+}
+
+.tituloIgnea {
+  color: black;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  border-bottom: #7842EA solid 4px;
+  margin-top: 3rem;
+}
+
+span {
+  font-size: 4rem;
+  
+}
+
+legend {
+  font-style: italic;
+  color: grey;
+  font-size: small;
 }
 
 /* mediaQ  */
