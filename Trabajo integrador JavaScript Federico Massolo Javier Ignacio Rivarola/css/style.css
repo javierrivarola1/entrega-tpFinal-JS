@@ -95,18 +95,18 @@ footer {
 }
 
 
-body {
+#body {
   background: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main {
+#main {
 width: 50%;
 }
 
-section {
+#main > section {
   margin-top:2rem;
   display:flex;
   flex-direction: column;
@@ -140,6 +140,9 @@ legend {
 /* mediaQ  */
 
 @media (width <= 480px) {
+
+  /* index */
+
   header {
     position: relative;
     height: 100vh;
@@ -151,7 +154,6 @@ legend {
   header > article {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
   }
 
   .navegador {
@@ -170,7 +172,7 @@ legend {
     background-color: black;
     height: 100vh;
     width: 45%;
-    position: absolute;
+    position: fixed;
     right: 0;
     z-index: 3;
     top: 0;
@@ -193,8 +195,15 @@ legend {
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 3rem;
+    gap: 4rem;
     color: whitesmoke;
+    margin: 2rem;
+  }
+
+  .menu:hover {
+    color: #af8cfb;
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
   }
 
   .menu li > a {
@@ -208,11 +217,26 @@ legend {
   }
 
   footer {
-display: flex;
-flex-direction: column;
-align-content: center;
 text-align: center;
   }
+
+  /* rocasIntrusivas */
+
+  #main {
+    width: 80%;
+    }
+
+    .header-intrusivas {
+      background: url("/img/header-intrusiva.jpg") center no-repeat;
+      background-size: cover;
+      height: 40vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+  
 
   @keyframes navAnimacion {
     0% {
