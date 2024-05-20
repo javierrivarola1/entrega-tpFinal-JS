@@ -76,6 +76,214 @@ nav button {
   display: none;
 }
 
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.modal-fondo{
+  position: fixed;
+  height: 100vh;
+  z-index: 8;
+  width: 100%;
+  background-color: hwb(0 43% 57% / 0.342);
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #d1d1d1;
+  height: 300px;
+  width: 300px;
+  border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.modal-titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-titulo > button {
+  border: none;
+  background-color: transparent;
+  align-self: end;
+  margin-bottom: 3px;
+}
+
+.modal-titulo > button:hover {
+  cursor: pointer;
+}
+
+.captcha-imagen {
+  background-color: rgb(236, 235, 235);
+  border-radius: 3px;
+  height: 75%;
+  width: 100%;
+}
+
+.input-modal {
+  background-color: green;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-modal input {
+  height: 100%;
+  width: 75%;
+  padding: 0px 3px;
+}
+
+.input-modal input:focus {
+  outline: none;
+}
+
+.input-modal button {
+  height: 100%;
+  width: 25%;
+}
+
+.mostrar {
+  display: flex;
+}
+
+.descripcion {
+  padding: 6px;
+  border-radius: 6px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.descripcion img {
+  border-radius: 6px;
+  object-fit: cover;
+  z-index: 0;
+  width: 40%;
+  height: 100%;
+
+  filter: brightness(0.8);
+}
+
+#contacto {
+  color: #363636;
+  display: flex;
+  width: 100%;
+  flex-direction: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+#contacto > img {
+  border-radius: 6px;
+  height: 100%;
+  width: 45%;
+  margin-left: 5rem;
+  object-fit: cover;
+}
+
+.contenido-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 95%;
+}
+
+.descripcion {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  gap: 1rem;
+}
+
+.descripcion p {
+  font-weight: medium;
+}
+
+#contacto fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  border: none;
+}
+
+#contacto form {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#contacto textarea {
+  height: 300px;
+  padding-top: 6px;
+  resize: none;
+}
+#contacto form input {
+  height: 25px;
+}
+#contacto form input,
+textarea {
+  margin-top: 6px;
+  padding-left: 6px;
+  background-color: #d9d9d9;
+  border-radius: 3px;
+  width: 100% !important;
+  border: none;
+}
+
+#contacto form input,
+textarea:focus {
+  outline: none;
+}
+
+#contacto form button {
+  align-self: center;
+  width: 25%;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #363636;
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.titulo-formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: end;
+}
+.titulo-formulario h3 {
+  font-size: 1.5rem;
+}
+.titulo-formulario span {
+  background-color: black;
+  height: 1px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
 footer {
   margin:3rem; 
   font-style: italic;
@@ -94,26 +302,21 @@ footer {
   overflow: hidden;
 }
 
-
-#body {
+#body-intrusivas {
   background: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#main {
+#main-intrusivas {
 width: 50%;
 }
 
-#main > section {
+#main-intrusivas > section {
   margin-top:2rem;
   display:flex;
   flex-direction: column;
-}
-
-div img{
-  width: 100%;
 }
 
 .tituloIgnea {
@@ -130,11 +333,23 @@ span {
   
 }
 
+#
+
 legend {
   font-style: italic;
   color: grey;
   font-size: small;
   margin: 0.5rem;
+}
+
+.rocasIgneas {
+  width: 50rem;
+  height: 31.25rem;
+}
+
+.rocas-animate {
+  width: 50rem;
+  height: 31.25rem;
 }
 
 /* mediaQ  */
@@ -143,9 +358,16 @@ legend {
 
   /* index */
 
+
   header {
     position: relative;
     height: 100vh;
+  }
+
+  .header-index {
+    background-position-x:75%;
+    background-size: 300%;
+    
   }
   nav button {
     display: block;
@@ -164,33 +386,12 @@ legend {
     display: none;
   }
 
-  .fondo-menu {
-    animation: navAnimacion 0.6s ease-in-out;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    height: 100vh;
-    width: 45%;
-    position: fixed;
-    right: 0;
-    z-index: 3;
-    top: 0;
-  }
-
-  #cierre-fondo-menu {
-    display: block;
-    text-decoration: none;
-    align-self: flex-end;
-    background-color: white;
-    height: 2rem;
-    width: 2rem;
-  }
 
   #cierre-fondo-menu img {
     height: 100%;
     width: 100%;
   }
+
   .menu {
     display: flex;
     flex-direction: column;
@@ -211,9 +412,38 @@ legend {
     color: whitesmoke;
   }
 
-  #btn-hamburguesa {
-    border: none;
-    background-color: transparent;
+
+  #contacto {
+    padding: 0;
+  }
+
+  #contacto > img {
+    display: none;
+  }
+
+  #contacto form textarea {
+    height: 150px;
+  }
+
+  #contacto form button {
+    width: 100%;
+  }
+
+  .contenido-informacion {
+    padding: 24px 16px 0px 16px;
+    width: 100%;
+  }
+
+  .descripcion {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/img/img_contacto.jpg") no-repeat center;
+    background-size: cover;
+    padding: 1rem;
+    color: white;
+  }
+
+  .descripcion p {
+    font-size: small;
   }
 
   footer {
@@ -222,8 +452,24 @@ text-align: center;
 
   /* rocasIntrusivas */
 
-  #main {
-    width: 80%;
+  #main-intrusivas {
+    width: 75%;
+    }
+
+    .rocasIgneas {
+      width: 19rem;
+      height: 17rem;
+      margin-bottom: 1rem;
+    }
+
+    .rocas-animate {
+      width: 19rem;
+      height: 17rem;
+      margin-bottom: 1rem;
+    }
+
+    #metamorficas > h2 {
+      margin: 1rem;
     }
 
     .header-intrusivas {
@@ -236,7 +482,36 @@ text-align: center;
       justify-content: space-between;
     }
 
-  
+
+    /* menu hamburguesa */
+
+    #btn-hamburguesa {
+      border: none;
+      background-color: transparent;
+    }
+
+    #cierre-fondo-menu {
+      display: block;
+      text-decoration: none;
+      align-self: flex-end;
+      background-color: white;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .fondo-menu {
+      animation: navAnimacion 0.6s ease-in-out;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      height: 100vh;
+      width: 45%;
+      position: fixed;
+      right: 0;
+      z-index: 3;
+      top: 0;
+    }
 
   @keyframes navAnimacion {
     0% {

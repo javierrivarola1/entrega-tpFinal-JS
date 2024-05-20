@@ -65,3 +65,6 @@ function generarNumeroAleatorio() {
 generarCadenaAleatoria();
 
 console.log(cadenaRetornada);
+
+
+
