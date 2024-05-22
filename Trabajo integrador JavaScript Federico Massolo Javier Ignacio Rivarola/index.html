@@ -11,45 +11,55 @@
       <nav class="navegador">
         <div>
           <a href="./index.html"
-            ><img src="./img/logo .svg" alt="logo_inicio" width="50px" height="50px" id="logo-svg">
+            ><img
+              src="./img/logo .svg"
+              alt="logo_inicio"
+              width="50px"
+              height="50px"
+              id="logo-svg"
+            />
           </a>
         </div>
 
         <button id="btn-hamburguesa">
-          <img src="/img/menu-alt-2-svgrepo-com.svg" alt="btn-hamburguesa" class="btn-hamburguesa" />
+          <img
+            src="./img/menu-alt-2-svgrepo-com.svg"
+            alt="btn-hamburguesa"
+            class="btn-hamburguesa"
+          />
         </button>
 
         <ul>
           <li>
-            <a href="/rocasExtrusivas.html">Rocas Extrusivas</a>
+            <a href="./rocasExtrusivas.html">Rocas Extrusivas</a>
           </li>
           <li>
-            <a href="/rocasIntrusivas.html">Rocas Intrusivas</a>
+            <a href="./rocasIntrusivas.html">Rocas Intrusivas</a>
           </li>
           <li>
-            <a href="#">Contactanos</a>
+            <a href="contacto.html">Contactanos</a>
           </li>
         </ul>
       </nav>
 
       <div id="fondo-menu" class="fondo-menu">
         <button id="cierre-fondo-menu">
-          <img src="./img/close-sm-svgrepo-com.sv" alt="cierre-fondo-menu" />
+          <img src="./img/close-sm-svgrepo-com.svg" alt="cierre-fondo-menu" />
         </button>
         <ul id="menu" class="menu">
           <li>
-            <a href="/rocasExtrusivas.html">Rocas Extrusivas</a>
+            <a href="rocasExtrusivas.html">Rocas Extrusivas</a>
           </li>
           <li>
-            <a href="/rocasIntrusivas.html">Rocas Intrusivas</a>
+            <a href="rocasIntrusivas.html">Rocas Intrusivas</a>
           </li>
           <li>
-            <a href="#">Contactanos</a>
+            <a href="contacto.html">Contactanos</a>
           </li>
         </ul>
       </div>
 
-      <article class="article">
+      <article class="articulo-index">
         <h2>Bienvenidos a Volcanes y Rocas Intrusivas</h2>
         <p>
           Adentrate en el asombroso mundo de los volcanes y sus caracteristicas
@@ -58,98 +68,129 @@
       </article>
     </header>
 
-<main>
+    <main>
+      <section id="seccion-volcan-explorar">
+        <section class="volcanes">
+          <article class="articulo-volcan-principal">
+            <img src="./img/volcan_pliniano.jpg" alt="" />
+            <div>
+              <h3>Volcan Pliniano</h3>
+              <table>
+                <tr>
+                  <th>Lava</th>
+                  <td>Bastante fluida</td>
+                </tr>
+                <tr>
+                  <th>Medida</th>
+                  <td>3.776 metros</td>
+                </tr>
+                <tr>
+                  <th>Era</th>
+                  <td>Cenozoica</td>
+                </tr>
+                <tr>
+                  <th>Rocas</th>
+                  <td>Gneis - Gabro</td>
+                </tr>
+              </table>
+            </div>
+          </article>
 
-  <section id="contacto">
-    <div class="contenido-informacion">
-      <article class="descripcion">
-        <h2>Contactanos</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sed nemo
-          laboriosam Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Totam a error, enim molestias, inventore neque beatae assumenda
-          eligendi, quisquam sapiente un
-        </p>
-      </article>
+          <aside class="contenedor-volcan-secundario">
+            <article class="articulo-volcan-secundario">
+              <img src="./img/volcan_hawaiano.jpg" alt="" />
+              <div>
+                <h3>Manua Loa</h3>
+                <table>
+                  <tr>
+                    <th>Lava</th>
+                    <td>Bastante fluida</td>
+                  </tr>
+                  <tr>
+                    <th>Medida</th>
+                    <td>3.500 metros</td>
+                  </tr>
+                  <tr>
+                    <th>Era</th>
+                    <td>Cenozoica</td>
+                  </tr>
+                  <tr>
+                    <th>Rocas</th>
+                    <td>Gneis - Gabro</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
 
-      <form id="formulario" class="formulario-contacto">
-        <div class="titulo-formulario">
-          <h3>Formulario</h3>
-          <span></span>
-        </div>
-        <fieldset>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" />
-        </fieldset>
-        <fieldset>
-          <label for="email">Email</label> <input type="email" id="correo" />
-        </fieldset>
+            <article class="articulo-volcan-secundario">
+              <img src="./img/volcan_estromboleano.jpg" alt="img_volcan_" />
+              <div>
+                <h3>Estramboli</h3>
+                <table>
+                  <tr>
+                    <th>Lava</th>
+                    <td>Bastante fluida</td>
+                  </tr>
+                  <tr>
+                    <th>Medida</th>
+                    <td>3.760 metros</td>
+                  </tr>
+                  <tr>
+                    <th>Era</th>
+                    <td>Cenozoica</td>
+                  </tr>
+                  <tr>
+                    <th>Rocas</th>
+                    <td>Gneis - Gabro</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+          </aside>
+        </section>
 
-        <fieldset>
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje"></textarea>
-        </fieldset>
-        <button type="button" id="boton-modal">ENVIAR</button>
-      </form>
-    </div>
-    <img src="./img/img_contacto.jpg" width="25%" height="100%" alt="" />
-  </section>
+        <article class="cabecera-explorar">
+          <a href="contacto.html">Contactanos</a>
+        </article>
+      </section>
 
-  <div id="modal" class="modal-fondo">
-    <div class="modal">
-      <div class="modal-titulo">
-        <h5>Captcha de seguridad</h5>
-        <button id="cerrar">
-          <svg
-            width="14px"
-            height="14px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <g id="Menu / Close_MD">
-                <path
-                  id="Vector"
-                  d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </g>
-          </svg>
-        </button>
-      </div>
+      <section id="seccion-explorar-rocas">
+        <img class="img-escritorio-rocas" src="./img/header_intrusiva.jpg" alt="" />
+        <section class="rocas-info ancho-total-mobil">
+          <article class="articulo-rocas-intrusivas">
+            <img src="./img/header_intrusiva.jpg" alt="" />
+            <div>
+              <h2>Rocas Extrusivas</h2>
+              <p>
+                Las rocas intrusivas/plutónicas son aquellas que se forman a
+                partir del enfriamiento y consolidación de un magma (se le llama
+                así al material rocoso fundido, mezcla de gases, líquidos y
+                cristales, que se forma en el interior de la Tierra)...
+              </p>
+              <a href="">ver mas</a>
+            </div>
+          </article>
 
-      <div class="captcha-imagen">
-        <div id="captcha">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-      </div>
-
-      <div class="input-modal">
-        <input id="texto-escrito" placeholder="Escriba el captcha en pantalla" type="text" />
-        <button id="enviar-texto">Confirmar</button>
-      </div>
-    </div>
-  </div>
-
-</main>
-
-
+          <article class="articulo-rocas-extrusivas">
+            <img src="./img/rocasIgneas.jpg" alt="" />
+            <div>
+              <h2>Rocas Intrusivas</h2>
+              <p>
+                Las rocas extrusivas, también conocidas como rocas volcánicas,
+                son un tipo de roca ígnea que se forma cuando el magma se enfría
+                y solidifica rápidamente en la superficie de la Tierra o cerca
+                de ella. Estas rocas tienen una serie de características
+                distintivas y una gran variedad de tipos, cada uno con
+                propiedades y orígenes específicos. A continuación se presenta
+                una descripción detallada de las rocas extrusivas en una
+                extensión de 10 carillas.
+              </p>
+              <a href="">ver mas</a>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
     <script src="main.js"></script>
-
-    <footer>
-      <p>Hecho por Federico Massolo y Javier Ignacio Rivarola, 2024.</p>
-    </footer>
-
   </body>
 </html>
