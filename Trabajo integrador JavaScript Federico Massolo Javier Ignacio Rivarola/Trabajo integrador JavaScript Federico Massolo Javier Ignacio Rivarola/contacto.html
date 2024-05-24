@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navegador">
+      <div>
+        <a href="./index.html"
+          ><img
+            src="./img/logo .svg"
+            alt="logo_inicio"
+            width="50px"
+            height="50px"
+            id="logo-svg"
+          />
+        </a>
+      </div>
+
+      <button id="btn-hamburguesa">
+        <img
+          src="./img/menu-alt-2-svgrepo-com.svg"
+          alt="btn-hamburguesa"
+          class="btn-hamburguesa"
+        />
+      </button>
+
+      <ul>
+        <li>
+          <a href="rocasExtrusivas.html">Rocas Extrusivas</a>
+        </li>
+        <li>
+          <a href="rocasIntrusivas.html">Rocas Intrusivas</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contactanos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="fondo-menu" class="fondo-menu">
+      <button id="cierre-fondo-menu">
+        <img src="./img/close-sm-svgrepo-com.svg" alt="cierre-fondo-menu" />
+      </button>
+      <ul id="menu" class="menu">
+        <li>
+          <a href="rocasExtrusivas.html">Rocas Extrusivas</a>
+        </li>
+        <li>
+          <a href="rocasIntrusivas.html">Rocas Intrusivas</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contactanos</a>
+        </li>
+      </ul>
+    </div>
+
+    <section id="contacto">
+      <div class="contenido-informacion">
+        <article class="descripcion">
+          <h2>Contactanos</h2>
+          <p>
+            Si tenes algún reporte de volcanes en tu ciudad y queres saber sobre cierta información específica, CONTACTANOS!
+          </p>
+        </article>
+
+        <form id="formulario" class="formulario-contacto">
+          <div class="titulo-formulario">
+            <h3>Formulario</h3>
+            <span></span>
+          </div>
+          <fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" />
+          </fieldset>
+          <fieldset>
+            <label for="email">Email</label> <input type="email" id="correo" />
+          </fieldset>
+
+          <fieldset>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+          </fieldset>
+          <button type="button" id="boton-modal">ENVIAR</button>
+        </form>
+      </div>
+      <img src="./img/img_contacto.jpg" width="25%" height="100%" alt="" />
+    </section>
+
+    <div id="modal" class="modal-fondo">
+      <div class="modal">
+        <div class="modal-titulo">
+          <h5>Captcha de seguridad</h5>
+          <button id="cerrar">
+            <svg
+              width="14px"
+              height="14px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="Menu / Close_MD">
+                  <path
+                    id="Vector"
+                    d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="captcha-imagen">
+          <div id="captcha" inert>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="input-modal">
+          <input
+            id="texto-escrito"
+            placeholder="Escriba el captcha en pantalla"
+            type="text"
+          />
+          <button id="enviar-texto">Confirmar</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
