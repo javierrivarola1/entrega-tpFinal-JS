@@ -7,83 +7,27 @@
   font-family: "Inter", sans-serif;
 }
 
-/* index */
+/* Estilos generales escritorio */
 
-.header-index {
-  background: url("../img/volcan_main.jpg") center no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
+main {
+  padding: 0px 12px;
 }
 
-.navegador {
+img {
+  border-radius: 6px;
+}
+
+footer {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  height: 10rem;
   width: 100%;
-  height: auto;
+  text-align: center;
+  font-style: italic;
 }
 
-.articulo-index {
-  margin: 4rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-#logo-svg {
-  margin: 1rem;
-}
-
-.navegador ul {
-  margin-right: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  width: 25rem;
-}
-
-.navegador li > a {
-  text-decoration: none;
-  color: white;
-}
-
-.navegador li a:hover {
-  color: #af8cfb;
-  text-decoration: underline;
-  transition: 0.5s ease-in-out;
-}
-
-#cierre-fondo-menu {
-  display: none;
-  background-color: transparent;
-  border: none;
-}
-
-.fondo-menu {
-  display: flex;
-}
-
-nav button {
-  display: none;
-}
-
-.fondo-menu {
-  display: none;
-}
-
-section {
-  height: 100vh;
-  width: 100%;
-}
+/* Modal Captcha */
 
 .modal-fondo {
   position: fixed;
@@ -133,6 +77,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+#mensaje-captcha {
+  font-size: 0.8rem;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 .input-modal {
@@ -161,178 +113,95 @@ section {
   display: flex;
 }
 
-.descripcion {
-  padding: 6px;
-  border-radius: 6px;
-  height: 100vh;
-  width: 100%;
+/*  Barra de navegacion */
+
+.navegador {
   display: flex;
   flex-direction: row;
-}
-
-.descripcion img {
-  border-radius: 6px;
-  object-fit: cover;
-  z-index: 0;
-  width: 40%;
-  height: 100%;
-
-  filter: brightness(0.8);
-}
-
-#contacto {
-  height: 90%;
-  color: #363636;
-  display: flex;
-  width: 100%;
-  flex-direction: row nowrap;
   align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 2rem 2rem 2rem 5rem;
-}
-
-#contacto > img {
-  border-radius: 6px;
-  height: 100%;
-  width: 45%;
-  margin-left: 5rem;
-  object-fit: cover;
-}
-
-.contenido-informacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40%;
-  height: 95%;
-}
-
-.descripcion {
+  width: 100%;
   height: auto;
-  width: 100%;
+}
+.navegador ul {
+  margin-right: 16px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-
-.descripcion p {
-  font-weight: medium;
-}
-
-#contacto fieldset {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  border: none;
-}
-
-#contacto form {
-  height: 100%;
-  width: 100%;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#contacto textarea {
-  height: 300px;
-  padding-top: 6px;
-  resize: none;
-}
-#contacto form input {
-  height: 25px;
-}
-#contacto form input,
-textarea {
-  margin-top: 6px;
-  padding-left: 6px;
-  background-color: #d9d9d9;
-  border-radius: 3px;
-  width: 100% !important;
-  border: none;
-}
-
-#contacto form input,
-textarea:focus {
-  outline: none;
-}
-
-#contacto form button {
-  align-self: center;
-  width: 25%;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  background-color: #363636;
-  padding: 8px 0px;
-  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  list-style: none;
+  width: 32rem;
 }
 
-.titulo-formulario {
-  width: 100%;
-  display: flex;
-  flex-direction: row nowrap;
-  align-items: end;
-}
-.titulo-formulario h3 {
-  font-size: 1.5rem;
-}
-.titulo-formulario span {
-  background-color: black;
-  height: 1px;
-  margin-bottom: 5px;
-  width: 100%;
+.navegador li > a {
+  text-decoration: none;
+  color: white;
 }
 
-footer {
-  margin: 3rem;
-  font-style: italic;
+.navegador li a:hover {
+  color: #af8cfb;
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
 }
 
-#seccion-volcan-explorar {
+#cierre-fondo-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.ocultar {
+  display: none;
+}
+
+.navegador button {
+  display: none;
+}
+
+/* index */
+
+#index-header {
+  background: url("../img/volcanes/volcan_main.jpg") center no-repeat;
+  background-size: cover;
   height: 100vh;
   width: 100%;
-  padding: 20px 12px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.index-articulo {
+  margin: 12rem;
+  font-size: 1.3rem;
+  max-width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo-svg {
+  margin: 1rem;
+}
+
+#index-main > section {
+  margin-top: 10rem;
+}
+
+#index-seccion-volcan {
+  height: 100vh;
+  width: 100%;
+  padding: 20px 0px;
   gap: 12px;
 }
 
-#seccion-volcan-explorar img {
+#index-seccion-volcan img {
   object-fit: cover;
 }
 
-.cabecera-explorar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/volcan_banner.jpg") center no-repeat;
-  background-size: cover;
-  width: 100%;
-  border-radius: 6px;
-  margin-top: 0.5rem;
-}
-
-.cabecera-explorar a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.cabecera-explorar a:hover {
-  text-decoration: underline;
-}
-
 .volcanes {
-  height: 75%;
+  height: 100%;
   width: 100%;
   display: flex;
   gap: 24px;
@@ -399,24 +268,28 @@ table th {
   height: 100%;
 }
 
-main {
-  padding: 0px 12px;
+.banner-volcan-contacto a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-/* Seccion Explorar Rocas */
+.banner-volcan-contacto a:hover {
+  text-decoration: underline;
+}
 
-#seccion-explorar-rocas {
+#index-seccion-rocas {
   height: 75vh;
   gap: 20px;
   display: flex;
 }
 
-#seccion-explorar-rocas img {
+#index-seccion-rocas img {
   object-fit: cover;
   border-radius: 6px;
 }
 
-#seccion-explorar-rocas > img {
+#index-seccion-rocas > img {
   height: 100%;
   width: 50%;
 }
@@ -429,18 +302,25 @@ main {
   justify-content: space-between;
 }
 
-.rocas-info p {
-  max-width: 400px;
-}
-
-.rocas-info article img {
+.rocas-info .rocas-info article img {
   width: 50%;
-  height: 100%;
-  object-fit: cover;
+  height: 80%;
 }
 
 .articulo-rocas-intrusivas div {
-  margin-top: 12px;
+  margin-top: 5rem;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.articulo-rocas-intrusivas h2 {
+  font-size: 2rem;
+}
+
+.articulo-rocas-intrusivas p {
+  font-size: 1.4rem;
+  max-width: 700px;
 }
 
 .articulo-rocas-intrusivas img {
@@ -457,7 +337,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: space-between;
 }
 
 .articulo-rocas-extrusivas h2 {
@@ -465,109 +344,387 @@ main {
   font-size: 2rem;
 }
 
-@media (width <= 768px) {
-  /*  Seccion Volcanes Explorar Tablet */
+.articulo-rocas-extrusivas p {
+  max-width: 400px;
+  font-size: 1.4rem;
+}
+.rocas-info a {
+  color: black;
+}
 
-  .volcanes {
-    height: 75%;
-    flex-direction: column;
-  }
+.articulo-rocas-intrusivas a:hover,
+.articulo-rocas-extrusivas a:hover {
+  color: #af8cfb;
+}
 
-  .articulo-volcan-principal {
-    height: 50%;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .articulo-volcan-principal table {
-    height: auto;
-  }
+.descripcion {
+  padding: 6px;
+  border-radius: 6px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
-  .articulo-volcan-principal img {
-    height: 60%;
-  }
+.descripcion img {
+  z-index: 0;
+  width: 40%;
+  height: 100%;
+  filter: brightness(0.8);
+}
 
-  .contenedor-volcan-secundario {
-    display: flex;
-    flex-direction: row;
+#contacto {
+  height: 90%;
+  color: #363636;
+  display: flex;
+  width: 100%;
+  flex-direction: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-    width: 100%;
-    height: 50%;
-    gap: 0px 24px;
-  }
+#contacto > img {
+  height: 100%;
+  width: 45%;
+  margin-left: 5rem;
+}
 
-  .articulo-volcan-secundario {
-    height: 100%;
-    flex-direction: column;
-  }
+.contenido-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 95%;
+}
 
-  .articulo-volcan-secundario img {
-    height: 60%;
-    width: 100%;
-  }
+.descripcion {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
 
-  .articulo-volcan-secundario div {
-    height: 40%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+.descripcion p {
+  font-weight: medium;
+}
 
-  .articulo-volcan-secundario div h3 {
-    margin: 0px;
-    margin-right: 40px;
-  }
+#contacto fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+}
 
-  .articulo-volcan-secundario table {
-    height: auto;
-    width: auto;
-    padding: 0px;
-  }
+#contacto form {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-  /* Seccion Rocas Tablet */
+#contacto textarea {
+  height: 300px;
+  padding-top: 6px;
+  resize: none;
+}
+#contacto form input {
+  height: 25px;
+}
+#contacto form input,
+textarea {
+  margin-top: 6px;
+  padding-left: 6px;
+  background-color: #d9d9d9;
+  border-radius: 3px;
+  width: 100% !important;
+  border: none;
+}
 
-  .rocas-info article img {
-    width: 100%;
-  }
+#contacto form input,
+textarea:focus {
+  outline: none;
+}
 
-  .articulo-rocas-extrusivas {
-    flex-direction: column;
-    gap: 0;
-  }
-  .articulo-rocas-extrusivas div p {
-    font-size: 0.8rem;
-  }
-  .articulo-rocas-extrusivas {
-    height: auto;
-  }
+#contacto form button {
+  align-self: center;
+  width: 25%;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #363636;
+  padding: 8px 0px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.titulo-formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: end;
+}
+.titulo-formulario h3 {
+  font-size: 1.5rem;
+}
+.titulo-formulario span {
+  background-color: black;
+  height: 1px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+/* Pagina Rocas Extrusivas*/
+
+#extrusivas-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#extrusivas-main section {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.extrusiva-seccion > img {
+  height: 30rem;
+}
+
+.extrusivas-seccion img {
+  width: 100%;
+}
+
+#galeria img {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  gap: 0;
+}
+
+#galeria div {
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  gap: 0px 0px;
+  list-style: none;
+}
+
+.extrusiva-intrusiva-header {
+  height: 80vh;
+  background: url("../img/rocas/header_intrusiva.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#main-intrusivas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-intrusivas section {
+  width: 50%;
+  height: 100%;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 40px 0px;
+}
+
+#main-intrusivas section img {
+  width: 100%;
+}
+
+#main-intrusivas h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.titulo-ignea {
+  color: black;
+  width: 50%;
+  text-align: start;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  border-bottom: #7842ea solid 4px;
+  margin-top: 3rem;
+}
+
+legend {
+  font-style: italic;
+  color: grey;
+  font-size: small;
+  margin: 0.5rem;
+}
+
+#diferencias-tabla > h2 {
+  text-align: start;
+  color: #0056b3;
+  margin: 1rem;
+}
+
+#diferencias-tabla > ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+ol > li {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
 }
 
 @media (width <= 448px) {
-  /* Clase General Movil */
-  .ancho-total-mobil {
+  /*  Estilo general movil */
+
+  .navegador button {
+    display: block;
+  }
+
+  .navegador {
+    padding: 0px 12px;
+  }
+
+  .navegador ul {
+    display: none;
+  }
+
+  #cierre-fondo-menu img {
+    height: 100%;
+
     width: 100%;
   }
 
-  /* Seccion Explorar Volcanes Movil */
-
-  #seccion-volcan-explorar {
+  .menu {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    list-style: none;
+    gap: 4rem;
+    color: whitesmoke;
+    margin: 2rem;
   }
 
-  .cabecera-explorar {
+  .menu:hover {
+    color: #af8cfb;
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
+  }
+
+  .menu li > a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  /* menu hamburguesa */
+
+  #btn-hamburguesa {
+    border: none;
+    background-color: transparent;
+  }
+
+  #cierre-fondo-menu {
+    display: block;
+    text-decoration: none;
+    align-self: flex-end;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .fondo-menu {
+    animation: navAnimacion 0.6s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    top: 0;
+  }
+
+  @keyframes navAnimacion {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes navAnimacionCerrar {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .cerrar {
+    animation: navAnimacionCerrar 0.6s ease-in-out forwards;
+  }
+
+  /* Index Header movil */
+
+  #header-index {
+    position: relative;
+    height: 100vh;
+  }
+
+  #index-header {
+    background-position-x: 75%;
+    background-size: 400%;
+    padding: 2rem;
+  }
+
+  .index-articulo {
+    width: 100%;
+    margin: 2rem 0px;
+  }
+
+  #index-main > section {
+    margin-top: 0rem;
+  }
+
+  /*Index */
+
+  #index-seccion-volcan {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-volcan-contacto {
     height: 25%;
-    padding: 12px;
   }
 
   .volcanes {
-    height: 75%;
+    flex-direction: column;
+    height: 100%;
     gap: 0px;
     color: white;
   }
 
   .articulo-volcan-principal {
+    width: 100%;
     position: relative;
   }
 
@@ -579,7 +736,7 @@ main {
   }
 
   .articulo-volcan-principal div {
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(22, 22, 22, 0.479);
     border-radius: 6px;
     height: 100%;
     width: 100%;
@@ -595,6 +752,7 @@ main {
   .contenedor-volcan-secundario {
     margin-top: 12px;
     height: 65%;
+    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 12px;
@@ -632,219 +790,66 @@ main {
     width: 100%;
   }
 
-  /* Seccion Rocas movil */
-
-  #seccion-explorar-rocas {
+  #index-seccion-rocas {
     height: 100vh;
   }
 
-  #seccion-explorar-rocas > img {
+  .img-escritorio-rocas {
     display: none;
   }
 
   .rocas-info {
     height: 100%;
+    width: 100%;
   }
 
   .rocas-info article {
+    flex-direction: column;
     height: 50%;
+    width: 100%;
+    gap: 0;
+  }
+
+  .rocas-info article div {
+    margin-top: 12px;
   }
 
   .rocas-info article img {
     height: 50%;
+    width: 100%;
+  }
+
+  .articulo-rocas-intrusivas div {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
   }
 
   .articulo-rocas-intrusivas img {
     display: block;
   }
-}
 
-/* Rocas intrusivas */
-
-.header-intrusivas {
-  background: url("../img/header_intrusiva.jpg") center no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-#body-intrusivas {
-  background: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#main-intrusivas {
-  height: 100%;
-  width: 50%;
-}
-
-#main-intrusivas > section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-#intrusivas > h2 {
-  margin: 1rem;
-}
-
-.tituloIgnea {
-  color: black;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3rem;
-  border-bottom: #7842ea solid 4px;
-  margin-top: 3rem;
-}
-
-span {
-  font-size: 4rem;
-}
-
-legend {
-  font-style: italic;
-  color: grey;
-  font-size: small;
-  margin: 0.5rem;
-}
-
-.rocas-animate,
-.rocasIgneas {
-  width: 100%;
-  height: 31.25rem;
-}
-
-/* rocasExtrusivas */
-
-#body-extrusivas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-extrusivas {
-  background: url("../img/header_intrusiva.jpg") center no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-#main-extrusivas {
-  width: 50%;
-  height: auto;
-  display: flex;
-  padding: 0px 12px;
-  flex-direction: column;
-}
-
-#main-extrusivas section {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.seccion-extrusivas img {
-  object-fit: cover;
-  max-height: 40rem;
-  border-radius: 6px;
-  width: 100%;
-}
-
-#galeria img {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  gap: 0;
-}
-
-#galeria div {
-  margin-top: 1rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0;
-  gap: 0px 0px;
-  list-style: none;
-}
-
-footer {
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10rem;
-  width: 100%;
-  text-align: center;
-  font-style: italic;
-}
-
-/* mediaQ  */
-
-@media (width <= 480px) {
-  .header-extrusivas {
-    height: 40vh;
+  .articulo-rocas-extrusivas h2,
+  .articulo-rocas-intrusivas h2 {
+    margin: 0px;
+    font-size: 1.2rem;
   }
 
-  /* index */
-
-  .header-index {
-    position: relative;
-    height: 100vh;
+  .articulo-rocas-extrusivas p,
+  .articulo-rocas-intrusivas p {
+    margin: 0px;
+    font-size: 0.9rem;
   }
 
-  .header-index {
-    background-position-x: 75%;
-    background-size: 400%;
-    padding: 2rem;
-  }
-  nav button {
-    display: block;
-  }
-
-  header > article {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navegador {
-    padding: 0px 12px;
-  }
-
-  .navegador ul {
-    display: none;
-  }
-
-  #cierre-fondo-menu img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 4rem;
-    color: whitesmoke;
-    margin: 2rem;
-  }
-
-  .menu:hover {
-    color: #af8cfb;
-    text-decoration: underline;
-    transition: 0.5s ease-in-out;
-  }
-
-  .menu li > a {
-    text-decoration: none;
-    color: whitesmoke;
+  .articulo-rocas-extrusivas div {
+    height: 50%;
+    margin: 0px;
+    gap: 0;
   }
 
   #contacto {
+    height: 100%;
+    width: 100%;
     padding: 0;
   }
 
@@ -867,7 +872,7 @@ footer {
 
   .descripcion {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/img_contacto.jpg") no-repeat center;
+      url("../img/volcanes/img_contacto.jpg") no-repeat center;
     background-size: cover;
     padding: 1rem;
     color: white;
@@ -877,51 +882,35 @@ footer {
     font-size: small;
   }
 
-  /* rocasIntrusivas */
+  /* Pagina Intrusivas movil */
 
-  #main-intrusivas {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  #intrusivas,
-  #metamorficas {
-    height: auto;
-  }
-
-  .rocasIgneas,
-  .rocas-animate {
-    width: 100%;
-    height: 17rem;
-    margin-bottom: 1rem;
-  }
-
-  #metamorficas > h2 {
-    margin-top: 6rem;
-    text-align: center;
-  }
-
-  #intrusivas > h2 {
-    text-align: center;
-    margin: 0.5rem;
-  }
-
-  .header-intrusivas {
+  .extrusiva-intrusiva-header {
     height: 40vh;
+  }
+
+  #main-intrusivas section {
     width: 100%;
   }
 
-  /* rocasExtrusivas */
+  #main-intrusivas img {
+    width: 100%;
+    height: 100%;
+  }
 
-  #main-extrusivas {
+  .titulo-ignea {
     width: 100%;
   }
 
+  /* Pagina Rocas Extrusivas movil */
+
+  #extrusivas-main {
+    width: 100%;
+  }
+
+  #extrusivas-main section {
+    width: 100%;
+  }
   .seccion-extrusivas img {
-    height: auto;
-  }
-
-  #galeria {
     height: auto;
   }
 
@@ -930,58 +919,181 @@ footer {
     gap: 1rem;
   }
 
-  #galeria img {
-    border-radius: 6px;
+  #diferencias-tabla {
+    padding: 5px;
   }
 
-  /* menu hamburguesa */
-
-  #btn-hamburguesa {
-    border: none;
-    background-color: transparent;
+  #diferencias-tabla > h2 {
+    font-size: 1.2em;
   }
 
-  #cierre-fondo-menu {
-    display: block;
-    text-decoration: none;
-    align-self: flex-end;
-    background-color: white;
-    height: 2rem;
-    width: 2rem;
+  #diferencias-tabla > ol {
+    padding-left: 5px;
   }
 
-  .fondo-menu {
-    animation: navAnimacion 0.6s ease-in-out;
-    display: none;
+  ul {
+    padding-left: 10px;
+  }
+}
+
+/* Comunidad */
+
+#comunidad-header {
+  background-color: rgb(51, 51, 51);
+}
+
+#contenedor {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100%;
+
+  gap: 10px;
+}
+
+.tarjeta-comunidad {
+  border: #d1d1d18c 1px solid;
+  border-radius: 6px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0px;
+  padding: 5rem;
+}
+
+.tarjeta-comunidad img {
+  margin-top: 25px;
+  height: 400px;
+  width: 100%;
+}
+
+#admin-contenedor {
+  height: 90vh;
+  width: 100%;
+}
+
+#tabla img {
+  height: 100px;
+}
+
+/* ADMIN */
+
+.herramientas {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.papelera {
+  width: 34px;
+}
+
+#tabla {
+  margin-top: 24px;
+
+  border-spacing: 12px 50px;
+}
+
+#tabla-contenido td > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.editar {
+  width: 34px;
+}
+
+.editar,
+.papelera:hover {
+  cursor: pointer;
+}
+
+.modal-ventana {
+  border-radius: 6px;
+  padding: 1rem;
+  gap: 12px 0px;
+  width: 500px;
+  border: grey solid 1px;
+  background-color: #fffffffa;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-ventana textarea {
+  border: solid 1px rgb(201, 201, 201);
+  background-color: transparent;
+  resize: none;
+  height: 300px;
+}
+.modal-editar {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
+}
+
+.azul {
+  color: blue;
+}
+
+.naranja {
+  color: orange;
+}
+
+.marron {
+  color: brown;
+}
+
+.tamanio-chico {
+  font-size: 24px;
+}
+
+.tamanio-mediano {
+  font-size: 50px;
+}
+
+.tamanio-grande {
+  font-size: 100px;
+}
+
+@media (width <= 448px) {
+  /* Comunidad */
+
+  #contenedor {
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
-    background-color: black;
-    height: 100vh;
-    width: 45%;
-    position: fixed;
-    right: 0;
-    z-index: 3;
-    top: 0;
+    justify-content: start;
+    width: 100%;
   }
 
-  @keyframes navAnimacion {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-  @keyframes navAnimacionCerrar {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
+  #tabla-contenido tr td:nth-child(1) {
+    color: #000;
   }
 
-  .cerrar {
-    animation: navAnimacionCerrar 0.6s ease-in-out forwards;
+  #tabla-contenido tr td:nth-child(3) {
+    display: none;
+  }
+
+  .tarjeta-comunidad {
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .tarjeta-comunidad img {
+    margin-top: 15px;
+    height: 300px;
+    object-fit: cover;
   }
 }
