@@ -7,12 +7,12 @@
   </head>
 
   <body>
-    <header class="header-index">
+    <header id="index-header">
       <nav class="navegador">
         <div>
-          <a href="./index.html"
+          <a href="index.html"
             ><img
-              src="./img/logo .svg"
+              src="./img/iconos/logo .svg"
               alt="logo_inicio"
               width="50px"
               height="50px"
@@ -23,30 +23,18 @@
 
         <button id="btn-hamburguesa">
           <img
-            src="./img/menu-alt-2-svgrepo-com.svg"
-            alt="btn-hamburguesa"
+            src="./img/iconos/icono_menu.svg"
+            alt="icon_boton_menu"
             class="btn-hamburguesa"
+            width="50px"
+              height="50px"
           />
         </button>
 
         <ul>
           <li>
-            <a href="./rocasExtrusivas.html">Rocas Extrusivas</a>
+            <a href="index.html">Inicio</a>
           </li>
-          <li>
-            <a href="./rocasIntrusivas.html">Rocas Intrusivas</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contactanos</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div id="fondo-menu" class="fondo-menu">
-        <button id="cierre-fondo-menu">
-          <img src="./img/close-sm-svgrepo-com.svg" alt="cierre-fondo-menu" />
-        </button>
-        <ul id="menu" class="menu">
           <li>
             <a href="rocasExtrusivas.html">Rocas Extrusivas</a>
           </li>
@@ -54,25 +42,55 @@
             <a href="rocasIntrusivas.html">Rocas Intrusivas</a>
           </li>
           <li>
-            <a href="contacto.html">Contactanos</a>
+            <a href="comunidad.html">Comunidad</a>
           </li>
+          <li>
+            <a href="admin.html">admin</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div id="fondo-menu" class="fondo-menu ocultar">
+        <button id="cierre-fondo-menu">
+          <img src="./img/iconos/icono_cerrar.svg" alt="img_boton_cerrar" />
+        </button>
+        <ul id="menu" class="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="rocasExtrusivas.html">Rocas Extrusivas</a>
+          </li>
+          <li>
+            <a href="rocasIntrusivas.html">Rocas Intrusivas</a>
+          </li>
+          <li>
+            <a href="comunidad.html">comunidad</a>
+          </li>
+          <li>
+            <a href="admin.html">admin</a>
+          </li>
+
         </ul>
       </div>
 
-      <article class="articulo-index">
+      <article class="index-articulo">
         <h2>Bienvenidos a Volcanes y Rocas Intrusivas</h2>
         <p>
-          Adentrate en el asombroso mundo de los volcanes y sus caracteristicas
-          que lo hacen
+          Adentrate en el asombroso mundo de los volcanes y sus rocas.
         </p>
       </article>
     </header>
 
-    <main>
-      <section id="seccion-volcan-explorar">
+    <main id="index-main">
+      <section id="index-seccion-volcan">
         <section class="volcanes">
           <article class="articulo-volcan-principal">
-            <img src="./img/volcan_pliniano.jpg" alt="" />
+            <img
+              src="./img/volcanes/volcan_pliniano.jpg"
+              alt="img_volcan_pliniano"
+            />
             <div>
               <h3>Volcan Pliniano</h3>
               <table>
@@ -98,7 +116,10 @@
 
           <aside class="contenedor-volcan-secundario">
             <article class="articulo-volcan-secundario">
-              <img src="./img/volcan_hawaiano.jpg" alt="" />
+              <img
+                src="./img/volcanes/volcan_hawaiano.jpg"
+                alt="img_volcan_hawaiano"
+              />
               <div>
                 <h3>Manua Loa</h3>
                 <table>
@@ -123,7 +144,10 @@
             </article>
 
             <article class="articulo-volcan-secundario">
-              <img src="./img/volcan_estromboleano.jpg" alt="img_volcan_" />
+              <img
+                src="./img/volcanes/volcan_estromboleano.jpg"
+                alt="img_volcan_estromboleano"
+              />
               <div>
                 <h3>Estramboli</h3>
                 <table>
@@ -148,17 +172,19 @@
             </article>
           </aside>
         </section>
-
-        <article class="cabecera-explorar">
-          <a href="contacto.html">Contactanos</a>
-        </article>
       </section>
-
-      <section id="seccion-explorar-rocas">
-        <img class="img-escritorio-rocas" src="./img/header_intrusiva.jpg" alt="" />
-        <section class="rocas-info ancho-total-mobil">
+      <section id="index-seccion-rocas">
+        <img
+          class="img-escritorio-rocas"
+          src="./img/rocas/header_intrusiva.jpg"
+          alt="img_escrito_rocas_intrusivas"
+        />
+        <section class="rocas-info">
           <article class="articulo-rocas-intrusivas">
-            <img src="./img/header_intrusiva.jpg" alt="" />
+            <img
+              src="./img/rocas/header_intrusiva.jpg" 
+              alt="img_movil_rocas_intrusivas"
+            />
             <div>
               <h2>Rocas Extrusivas</h2>
               <p>
@@ -167,30 +193,118 @@
                 así al material rocoso fundido, mezcla de gases, líquidos y
                 cristales, que se forma en el interior de la Tierra)...
               </p>
-              <a href="">ver mas</a>
+              <a href="rocasIntrusivas.html">ver mas</a>
             </div>
           </article>
 
           <article class="articulo-rocas-extrusivas">
-            <img src="./img/rocasIgneas.jpg" alt="" />
+            <img src="./img/rocas/rocas_igneas.jpg" alt="img_rocas_igneas" />
             <div>
               <h2>Rocas Intrusivas</h2>
               <p>
                 Las rocas extrusivas, también conocidas como rocas volcánicas,
                 son un tipo de roca ígnea que se forma cuando el magma se enfría
                 y solidifica rápidamente en la superficie de la Tierra o cerca
-                de ella. Estas rocas tienen una serie de características
-                distintivas y una gran variedad de tipos, cada uno con
-                propiedades y orígenes específicos. A continuación se presenta
-                una descripción detallada de las rocas extrusivas en una
-                extensión de 10 carillas.
+                de ella. Estas rocas tienen una serie de características...
               </p>
-              <a href="">ver mas</a>
+              <a href="/rocasIntrusivas">ver mas</a>
             </div>
           </article>
         </section>
       </section>
+
+      <section id="contacto">
+        <section class="contenido-informacion">
+          <article class="descripcion">
+            <h2>Contactanos</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sed nemo
+              laboriosam Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Totam a error, enim molestias, inventore neque beatae assumenda
+              eligendi, quisquam sapiente un
+            </p>
+          </article>
+  
+          <form id="formulario" >
+            <div class="titulo-formulario">
+              <h3>Formulario</h3>
+              <span></span>
+            </div>
+            <fieldset>
+              <label for="titulo">Titulo</label>
+              <input type="text" id="titulo" placeholder="ej Rocas Intrusivas" />
+            </fieldset>
+            <fieldset>
+              <label for="img-rul">Url de Imagen</label>
+             <input type="text" placeholder="url" id="url-img">
+            </fieldset>
+  
+            <fieldset>
+              <label for="contenido">Aporte</label>
+              <textarea id="contenido"></textarea>
+            </fieldset>
+            <button type="submit" id="boton-modal">enviar</button>
+          </form>
+        </section>
+        <img src="./img/volcanes/img_contacto.jpg" width="25%" height="100%" alt="" />
+      </section>
+  
+      <div id="modal" class="modal-fondo">
+        <div class="modal">
+          <div class="modal-titulo">
+            <h5>Captcha de seguridad</h5>
+            <button id="cerrar">
+              <svg
+                width="14px"
+                height="14px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g id="Menu / Close_MD">
+                    <path
+                      id="Vector"
+                      d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+  
+          <div class="captcha-imagen">
+             <!-- inert  -->
+            <div id="captcha" inert>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p id="mensaje-captcha"></p>
+          </div>
+  
+          <div class="input-modal">
+            <input
+              id="texto-escrito"
+              placeholder="Escriba el captcha en pantalla"
+              type="text"
+            />
+            <button type="submit" id="enviar-texto">Confirmar</button>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <p>Hecho por Federico Massolo y Javier Ignacio Rivarola, 2024.</p>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
